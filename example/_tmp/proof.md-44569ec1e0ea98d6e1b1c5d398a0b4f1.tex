@@ -1,0 +1,26 @@
+\documentclass{minimal}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{esint}
+\usepackage{esint}
+\usepackage{esint}
+\usepackage{esint}
+\usepackage{esint}
+\usepackage{esint}
+\usepackage{esint}
+\newcommand{\dd}[1]{\text{d}\!#1}
+\newcommand{\tdiv}{\text{div}\:}
+
+\begin{document}
+\begin{displaymath}
+\begin{split}
+\iiint_V \nabla \cdot \vec v \dd{V} &= \iiint_V \left(\frac{\partial v_x}{\partial x} + \frac{\partial v_y}{\partial y} + \frac{\partial v_z}{\partial z} \right) \dd{x} \dd{y} \dd{z} \\
+& = \iiint \frac{\partial v_x}{\partial x} \dd{x} \dd{y} \dd{z} + \iiint \frac{\partial v_y}{\partial y} \dd{x} \dd{y} \dd{z} + \iiint \frac{\partial v_z}{\partial z} \dd{x} \dd{y} \dd{z} \\
+& = \int_{c_1}^{c_2} \int_{b_1}^{b_2} (v_x(a_2,y,z) - v_x(a_1,y,z)) \dd{y} \dd{z} + \ldots
+& = \iint_{A_{x,2}} v_x \dd{y} \dd{z} - \iint_{A_{x,1}} v_x \dd{y} \dd{z} + \ldots
+\end{split}
+\end{displaymath}
+\end{document}

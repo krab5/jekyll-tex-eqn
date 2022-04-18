@@ -1,0 +1,30 @@
+local: "en-US"
+encoding: "utf-8"
+
+title: "Jekyll Tex EQN Test"
+author: "krab5"
+
+url: "http://127.0.0.1:4000"
+baseurl: "/"
+
+exclude:
+    - _tmp/
+    - Gemfile*
+
+include:
+    - assets/
+
+whitelist:
+    - jekyll-tex-eqn
+
+texeqn:
+    backend: "pdflatex"
+    blockclass: "equation img-div"
+    inlineclass: "inline-eq"
+    extra_packages:
+        - name: "esint"
+    extra_head: |
+      \newcommand{\dd}[1]{\text{d}\!#1}
+      \newcommand{\tdiv}{\text{div}\:}
+
+
