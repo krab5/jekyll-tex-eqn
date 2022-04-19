@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = "jekyll-tex-eqn"
   s.summary     = "Standalone, static, no-JS, TeX-rendered mathematical equations for your Jekyll website"
-  s.version     = "0.9.0"
+  s.version     = "0.9.1"
   s.authors     = ["krab5"]
   s.email       = "crab.delicieux@gmail.com"
 
