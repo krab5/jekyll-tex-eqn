@@ -68,7 +68,10 @@ module Jekyll
       # Get the value of an option, or the provided default value if that option
       # has not been set
       def self.get_option(key, default)
-        v = @@config[key]
+        v = nil
+        if !@@config.nil? then
+          v = @@config[key]
+        end
         if v.nil? && !default.nil? then
           v = default
         end
